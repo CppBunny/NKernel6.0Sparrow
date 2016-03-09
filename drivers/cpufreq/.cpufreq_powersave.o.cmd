@@ -11,6 +11,10 @@ deps_drivers/cpufreq/cpufreq_powersave.o := \
     $(wildcard include/config/cpu/freq/default/gov/userspace.h) \
     $(wildcard include/config/cpu/freq/default/gov/ondemand.h) \
     $(wildcard include/config/cpu/freq/default/gov/conservative.h) \
+    $(wildcard include/config/cpu/freq/default/gov/smartmax.h) \
+    $(wildcard include/config/cpu/freq/default/gov/pegasus.h) \
+    $(wildcard include/config/cpu/freq/default/gov/thunder.h) \
+    $(wildcard include/config/cpu/freq/default/gov/interactivex.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactive.h) \
   include/linux/cpumask.h \
     $(wildcard include/config/cpumask/offstack.h) \

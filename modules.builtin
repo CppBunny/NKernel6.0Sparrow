@@ -59,6 +59,8 @@ kernel/crypto/krng.ko
 kernel/block/deadline-iosched.ko
 kernel/block/row-iosched.ko
 kernel/block/cfq-iosched.ko
+kernel/block/sio-iosched.ko
+kernel/block/tripndroid-iosched.ko
 kernel/drivers/BCM_LPM/bluesleep.ko
 kernel/drivers/base/firmware_class.ko
 kernel/drivers/base/regmap/regmap-i2c.ko
@@ -76,6 +78,10 @@ kernel/drivers/cpufreq/cpufreq_performance.ko
 kernel/drivers/cpufreq/cpufreq_powersave.ko
 kernel/drivers/cpufreq/cpufreq_userspace.ko
 kernel/drivers/cpufreq/cpufreq_ondemand.ko
+kernel/drivers/cpufreq/cpufreq_smartmax.ko
+kernel/drivers/cpufreq/cpufreq_pegasusq.ko
+kernel/drivers/cpufreq/cpufreq_thunderx.ko
+kernel/drivers/cpufreq/cpufreq_interactiveX.ko
 kernel/drivers/cpufreq/cpufreq_persistent_stats.ko
 kernel/drivers/crypto/msm/qce50.ko
 kernel/drivers/devfreq/governor_simpleondemand.ko

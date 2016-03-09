@@ -1796,6 +1796,8 @@ int cpufreq_driver_target(struct cpufreq_policy *policy,
 }
 EXPORT_SYMBOL_GPL(cpufreq_driver_target);
 
+
+
 /*
  * when "event" is CPUFREQ_GOV_LIMITS
  */

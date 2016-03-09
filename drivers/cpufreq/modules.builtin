@@ -3,4 +3,8 @@ kernel/drivers/cpufreq/cpufreq_performance.ko
 kernel/drivers/cpufreq/cpufreq_powersave.ko
 kernel/drivers/cpufreq/cpufreq_userspace.ko
 kernel/drivers/cpufreq/cpufreq_ondemand.ko
+kernel/drivers/cpufreq/cpufreq_smartmax.ko
+kernel/drivers/cpufreq/cpufreq_pegasusq.ko
+kernel/drivers/cpufreq/cpufreq_thunderx.ko
+kernel/drivers/cpufreq/cpufreq_interactiveX.ko
 kernel/drivers/cpufreq/cpufreq_persistent_stats.ko

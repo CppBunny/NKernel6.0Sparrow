@@ -1014,6 +1014,10 @@ deps_kernel/sched/core.o := \
     $(wildcard include/config/cpu/freq/default/gov/userspace.h) \
     $(wildcard include/config/cpu/freq/default/gov/ondemand.h) \
     $(wildcard include/config/cpu/freq/default/gov/conservative.h) \
+    $(wildcard include/config/cpu/freq/default/gov/smartmax.h) \
+    $(wildcard include/config/cpu/freq/default/gov/pegasus.h) \
+    $(wildcard include/config/cpu/freq/default/gov/thunder.h) \
+    $(wildcard include/config/cpu/freq/default/gov/interactivex.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactive.h) \
   /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/switch_to.h \
   /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/tlb.h \

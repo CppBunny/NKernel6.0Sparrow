@@ -475,6 +475,10 @@ deps_drivers/cpufreq/cpufreq_ondemand.o := \
     $(wildcard include/config/cpu/freq/default/gov/powersave.h) \
     $(wildcard include/config/cpu/freq/default/gov/userspace.h) \
     $(wildcard include/config/cpu/freq/default/gov/conservative.h) \
+    $(wildcard include/config/cpu/freq/default/gov/smartmax.h) \
+    $(wildcard include/config/cpu/freq/default/gov/pegasus.h) \
+    $(wildcard include/config/cpu/freq/default/gov/thunder.h) \
+    $(wildcard include/config/cpu/freq/default/gov/interactivex.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactive.h) \
   include/linux/kernel_stat.h \
     $(wildcard include/config/virt/cpu/accounting/native.h) \

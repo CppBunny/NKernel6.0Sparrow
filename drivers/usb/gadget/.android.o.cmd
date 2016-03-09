@@ -1131,6 +1131,10 @@ deps_drivers/usb/gadget/android.o := \
   include/uapi/linux/hiddev.h \
   include/linux/usb/f_accessory.h \
   include/uapi/linux/usb/f_accessory.h \
+  drivers/usb/gadget/f_hid.h \
+  include/linux/usb/g_hid.h \
+  drivers/usb/gadget/f_hid_android_keyboard.c \
+  drivers/usb/gadget/f_hid_android_mouse.c \
   drivers/usb/gadget/f_rndis.c \
   include/linux/etherdevice.h \
     $(wildcard include/config/have/efficient/unaligned/access.h) \
@@ -1169,6 +1173,10 @@ deps_drivers/usb/gadget/android.o := \
     $(wildcard include/config/cpu/freq/default/gov/userspace.h) \
     $(wildcard include/config/cpu/freq/default/gov/ondemand.h) \
     $(wildcard include/config/cpu/freq/default/gov/conservative.h) \
+    $(wildcard include/config/cpu/freq/default/gov/smartmax.h) \
+    $(wildcard include/config/cpu/freq/default/gov/pegasus.h) \
+    $(wildcard include/config/cpu/freq/default/gov/thunder.h) \
+    $(wildcard include/config/cpu/freq/default/gov/interactivex.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactive.h) \
   drivers/usb/gadget/u_qc_ether.c \
   drivers/usb/gadget/u_uac1.c \

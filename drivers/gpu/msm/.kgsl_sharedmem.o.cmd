@@ -830,6 +830,10 @@ deps_drivers/gpu/msm/kgsl_sharedmem.o := \
     $(wildcard include/config/cpu/freq/default/gov/userspace.h) \
     $(wildcard include/config/cpu/freq/default/gov/ondemand.h) \
     $(wildcard include/config/cpu/freq/default/gov/conservative.h) \
+    $(wildcard include/config/cpu/freq/default/gov/smartmax.h) \
+    $(wildcard include/config/cpu/freq/default/gov/pegasus.h) \
+    $(wildcard include/config/cpu/freq/default/gov/thunder.h) \
+    $(wildcard include/config/cpu/freq/default/gov/interactivex.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactive.h) \
   include/linux/msm_adreno_devfreq.h \
   drivers/gpu/msm/kgsl_snapshot.h \
