@@ -1,0 +1,1 @@
+cmd_drivers/power/fsm/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/power/fsm/built-in.o drivers/power/fsm/AXA_Charging_State.o drivers/power/fsm/AXC_Charging_FSM.o drivers/power/fsm/AXC_FSM_Stress_Tester.o 

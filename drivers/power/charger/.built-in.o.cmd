@@ -1,0 +1,1 @@
+cmd_drivers/power/charger/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/power/charger/built-in.o drivers/power/charger/axc_chargerfactory.o drivers/power/charger/axc_DummyCharger.o drivers/power/charger/axc_PM8226Charger.o 

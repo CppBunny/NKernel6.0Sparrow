@@ -1,0 +1,1 @@
+cmd_drivers/gud/mcDrvModule.ko := /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL -r  -T /home/noahvt/Documents/NKernel6.0/scripts/module-common.lds --build-id  -o drivers/gud/mcDrvModule.ko drivers/gud/mcDrvModule.o drivers/gud/mcDrvModule.mod.o

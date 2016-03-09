@@ -1,0 +1,1 @@
+cmd_drivers/power/capfilter/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/power/capfilter/built-in.o drivers/power/capfilter/axc_cap_filter_a66.o drivers/power/capfilter/axc_cap_filter_p02.o drivers/power/capfilter/axc_cap_filter_dock.o drivers/power/capfilter/axc_cap_filter_factory.o 

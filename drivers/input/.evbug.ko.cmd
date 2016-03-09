@@ -1,0 +1,1 @@
+cmd_drivers/input/evbug.ko := /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL -r  -T /home/noahvt/Documents/NKernel6.0/scripts/module-common.lds --build-id  -o drivers/input/evbug.ko drivers/input/evbug.o drivers/input/evbug.mod.o

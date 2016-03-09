@@ -1,0 +1,1 @@
+cmd_drivers/iio/common/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/iio/common/built-in.o drivers/iio/common/hid-sensors/built-in.o drivers/iio/common/st_sensors/built-in.o 

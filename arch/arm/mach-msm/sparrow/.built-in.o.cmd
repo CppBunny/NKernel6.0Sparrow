@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-msm/sparrow/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o arch/arm/mach-msm/sparrow/built-in.o arch/arm/mach-msm/sparrow/gpio_pinmux.o arch/arm/mach-msm/sparrow/rfkill.o 

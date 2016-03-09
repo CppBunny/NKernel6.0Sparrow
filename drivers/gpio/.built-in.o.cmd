@@ -1,0 +1,1 @@
+cmd_drivers/gpio/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/gpio/built-in.o drivers/gpio/devres.o drivers/gpio/gpiolib.o drivers/gpio/gpiolib-of.o drivers/gpio/gpio-msm-common.o drivers/gpio/gpio-msm-v3.o drivers/gpio/qpnp-pin.o drivers/gpio/gpio-msm-smp2p.o drivers/gpio/gpio-msm-smp2p-test.o 
