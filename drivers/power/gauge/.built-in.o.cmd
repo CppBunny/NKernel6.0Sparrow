@@ -1,1 +1,1 @@
-cmd_drivers/power/gauge/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/power/gauge/built-in.o drivers/power/gauge/axc_gauge_a66.o drivers/power/gauge/axc_gaugefactory.o drivers/power/gauge/AXC_CapacityFilter.o drivers/power/gauge/test_gauge.o 
+cmd_drivers/power/gauge/built-in.o :=  /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/power/gauge/built-in.o drivers/power/gauge/axc_gauge_a66.o drivers/power/gauge/axc_gaugefactory.o drivers/power/gauge/AXC_CapacityFilter.o drivers/power/gauge/test_gauge.o 

@@ -1,1 +1,1 @@
-cmd_net/ipc_router/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o net/ipc_router/built-in.o net/ipc_router/ipc_router_core.o net/ipc_router/ipc_router_socket.o net/ipc_router/ipc_router_security.o 
+cmd_net/ipc_router/built-in.o :=  /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-ld -EL    -r -o net/ipc_router/built-in.o net/ipc_router/ipc_router_core.o net/ipc_router/ipc_router_socket.o net/ipc_router/ipc_router_security.o 

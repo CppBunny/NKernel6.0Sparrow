@@ -27,11 +27,10 @@ __attribute__((section("__versions"))) = {
 	{ 0x5cf1d941, __VMLINUX_SYMBOL_STR(input_allocate_device) },
 	{ 0x9b60db24, __VMLINUX_SYMBOL_STR(dev_set_drvdata) },
 	{ 0x12da5bb2, __VMLINUX_SYMBOL_STR(__kmalloc) },
-	{ 0xefd6cf06, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr0) },
 	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
 	{ 0x4bc06a2b, __VMLINUX_SYMBOL_STR(input_unregister_device) },
 	{ 0xfd9a2d2a, __VMLINUX_SYMBOL_STR(dev_get_drvdata) },
-	{ 0x2e5810c6, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr1) },
+	{ 0xefd6cf06, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr0) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
 };
 

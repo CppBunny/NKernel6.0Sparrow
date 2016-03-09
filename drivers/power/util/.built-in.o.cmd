@@ -1,1 +1,1 @@
-cmd_drivers/power/util/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/power/util/built-in.o drivers/power/util/AXC_DoitLater_OneShotWorker.o drivers/power/util/AXC_DoitLaterFactory.o drivers/power/util/AXC_FeedingFileInputTest.o 
+cmd_drivers/power/util/built-in.o :=  /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/power/util/built-in.o drivers/power/util/AXC_DoitLater_OneShotWorker.o drivers/power/util/AXC_DoitLaterFactory.o drivers/power/util/AXC_FeedingFileInputTest.o 

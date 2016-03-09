@@ -1,1 +1,1 @@
-cmd_drivers/media/tuners/tda18271.ko := /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL -r  -T /home/noahvt/Documents/NKernel6.0/scripts/module-common.lds --build-id  -o drivers/media/tuners/tda18271.ko drivers/media/tuners/tda18271.o drivers/media/tuners/tda18271.mod.o
+cmd_drivers/media/tuners/tda18271.ko := /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-ld -EL -r  -T /home/noahvt/Documents/NKernel6.0/scripts/module-common.lds --build-id  -o drivers/media/tuners/tda18271.ko drivers/media/tuners/tda18271.o drivers/media/tuners/tda18271.mod.o

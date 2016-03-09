@@ -1,1 +1,1 @@
-cmd_arch/arm/vfp/vfp.o := /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL  --no-warn-mismatch   -r -o arch/arm/vfp/vfp.o arch/arm/vfp/vfpmodule.o arch/arm/vfp/entry.o arch/arm/vfp/vfphw.o arch/arm/vfp/vfpsingle.o arch/arm/vfp/vfpdouble.o 
+cmd_arch/arm/vfp/vfp.o := /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-ld -EL  --no-warn-mismatch   -r -o arch/arm/vfp/vfp.o arch/arm/vfp/vfpmodule.o arch/arm/vfp/entry.o arch/arm/vfp/vfphw.o arch/arm/vfp/vfpsingle.o arch/arm/vfp/vfpdouble.o 

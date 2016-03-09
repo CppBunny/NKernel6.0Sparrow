@@ -1,1 +1,1 @@
-cmd_drivers/power/qcom/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/power/qcom/built-in.o drivers/power/qcom/msm-pm.o drivers/power/qcom/pm-data.o drivers/power/qcom/pm-stats.o drivers/power/qcom/lpm-stats.o drivers/power/qcom/pm-boot.o 
+cmd_drivers/power/qcom/built-in.o :=  /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/power/qcom/built-in.o drivers/power/qcom/msm-pm.o drivers/power/qcom/pm-data.o drivers/power/qcom/pm-stats.o drivers/power/qcom/lpm-stats.o drivers/power/qcom/pm-boot.o 

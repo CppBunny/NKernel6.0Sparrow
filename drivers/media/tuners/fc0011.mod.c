@@ -18,7 +18,6 @@ __attribute__((section("__versions"))) = {
 	{ 0xf090aaf4, __VMLINUX_SYMBOL_STR(module_layout) },
 	{ 0x3f4c4798, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
 	{ 0x44afe74f, __VMLINUX_SYMBOL_STR(i2c_transfer) },
-	{ 0xe707d823, __VMLINUX_SYMBOL_STR(__aeabi_uidiv) },
 	{ 0x5f754e5a, __VMLINUX_SYMBOL_STR(memset) },
 	{ 0xe39bd174, __VMLINUX_SYMBOL_STR(dev_err) },
 	{ 0x16305289, __VMLINUX_SYMBOL_STR(warn_slowpath_null) },

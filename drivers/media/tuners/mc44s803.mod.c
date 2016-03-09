@@ -19,7 +19,6 @@ __attribute__((section("__versions"))) = {
 	{ 0x3f4c4798, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
 	{ 0xf9a482f9, __VMLINUX_SYMBOL_STR(msleep) },
 	{ 0x44afe74f, __VMLINUX_SYMBOL_STR(i2c_transfer) },
-	{ 0xe707d823, __VMLINUX_SYMBOL_STR(__aeabi_uidiv) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
 	{ 0x8e9379f8, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
 	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },

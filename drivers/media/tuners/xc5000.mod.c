@@ -21,7 +21,6 @@ __attribute__((section("__versions"))) = {
 	{ 0x15692c87, __VMLINUX_SYMBOL_STR(param_ops_int) },
 	{ 0x44afe74f, __VMLINUX_SYMBOL_STR(i2c_transfer) },
 	{ 0xd91cba37, __VMLINUX_SYMBOL_STR(mutex_unlock) },
-	{ 0xe707d823, __VMLINUX_SYMBOL_STR(__aeabi_uidiv) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
 	{ 0xc03bed7d, __VMLINUX_SYMBOL_STR(mutex_lock) },
 	{ 0x2196324, __VMLINUX_SYMBOL_STR(__aeabi_idiv) },

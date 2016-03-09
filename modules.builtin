@@ -60,7 +60,6 @@ kernel/block/deadline-iosched.ko
 kernel/block/row-iosched.ko
 kernel/block/cfq-iosched.ko
 kernel/block/sio-iosched.ko
-kernel/block/tripndroid-iosched.ko
 kernel/drivers/BCM_LPM/bluesleep.ko
 kernel/drivers/base/firmware_class.ko
 kernel/drivers/base/regmap/regmap-i2c.ko

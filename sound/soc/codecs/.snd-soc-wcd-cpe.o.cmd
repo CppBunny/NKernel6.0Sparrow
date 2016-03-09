@@ -1,1 +1,1 @@
-cmd_sound/soc/codecs/snd-soc-wcd-cpe.o := /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o sound/soc/codecs/snd-soc-wcd-cpe.o sound/soc/codecs/wcd_cpe_services.o sound/soc/codecs/wcd_cpe_core.o 
+cmd_sound/soc/codecs/snd-soc-wcd-cpe.o := /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-ld -EL    -r -o sound/soc/codecs/snd-soc-wcd-cpe.o sound/soc/codecs/wcd_cpe_services.o sound/soc/codecs/wcd_cpe_core.o 

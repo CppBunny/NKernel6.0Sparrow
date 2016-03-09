@@ -20,7 +20,6 @@ __attribute__((section("__versions"))) = {
 	{ 0xf9a482f9, __VMLINUX_SYMBOL_STR(msleep) },
 	{ 0x15692c87, __VMLINUX_SYMBOL_STR(param_ops_int) },
 	{ 0x44afe74f, __VMLINUX_SYMBOL_STR(i2c_transfer) },
-	{ 0xe707d823, __VMLINUX_SYMBOL_STR(__aeabi_uidiv) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
 	{ 0xf0fdf6cb, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
 	{ 0x8e9379f8, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },

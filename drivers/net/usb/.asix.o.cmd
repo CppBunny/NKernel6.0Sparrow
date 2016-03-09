@@ -1,1 +1,1 @@
-cmd_drivers/net/usb/asix.o := /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/net/usb/asix.o drivers/net/usb/asix_devices.o drivers/net/usb/asix_common.o drivers/net/usb/ax88172a.o 
+cmd_drivers/net/usb/asix.o := /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/net/usb/asix.o drivers/net/usb/asix_devices.o drivers/net/usb/asix_common.o drivers/net/usb/ax88172a.o 

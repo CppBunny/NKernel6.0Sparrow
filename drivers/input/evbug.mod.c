@@ -26,11 +26,10 @@ __attribute__((section("__versions"))) = {
 	{ 0xae5ce2d7, __VMLINUX_SYMBOL_STR(input_open_device) },
 	{ 0x10a5017f, __VMLINUX_SYMBOL_STR(input_register_handle) },
 	{ 0x8e9379f8, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
-	{ 0xefd6cf06, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr0) },
 	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
 	{ 0x42532c3d, __VMLINUX_SYMBOL_STR(input_unregister_handle) },
 	{ 0xa9d839e6, __VMLINUX_SYMBOL_STR(input_close_device) },
-	{ 0x2e5810c6, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr1) },
+	{ 0xefd6cf06, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr0) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
 };
 

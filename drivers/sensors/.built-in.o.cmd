@@ -1,1 +1,1 @@
-cmd_drivers/sensors/built-in.o :=  /usr/local/share/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/sensors/built-in.o drivers/sensors/sensors_class.o drivers/sensors/sensors_ssc.o drivers/sensors/pni/built-in.o 
+cmd_drivers/sensors/built-in.o :=  /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/sensors/built-in.o drivers/sensors/sensors_class.o drivers/sensors/sensors_ssc.o drivers/sensors/pni/built-in.o 

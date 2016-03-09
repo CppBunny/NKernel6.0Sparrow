@@ -23,7 +23,6 @@ __attribute__((section("__versions"))) = {
 	{ 0x2e5810c6, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr1) },
 	{ 0x44afe74f, __VMLINUX_SYMBOL_STR(i2c_transfer) },
 	{ 0xd91cba37, __VMLINUX_SYMBOL_STR(mutex_unlock) },
-	{ 0xe707d823, __VMLINUX_SYMBOL_STR(__aeabi_uidiv) },
 	{ 0x5f754e5a, __VMLINUX_SYMBOL_STR(memset) },
 	{ 0x27d82877, __VMLINUX_SYMBOL_STR(__mutex_init) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
