@@ -700,6 +700,7 @@ deps_kernel/sched/fair.o := \
   kernel/sched/sched.h \
     $(wildcard include/config/paravirt.h) \
     $(wildcard include/config/paravirt/time/accounting.h) \
+    $(wildcard include/config/intelli/plug.h) \
     $(wildcard include/config/sysrq/sched/debug.h) \
   include/linux/sched/sysctl.h \
   include/linux/sched/rt.h \

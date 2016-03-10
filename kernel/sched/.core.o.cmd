@@ -4,7 +4,7 @@ source_kernel/sched/core.o := kernel/sched/core.c
 
 deps_kernel/sched/core.o := \
     $(wildcard include/config/paravirt.h) \
-    $(wildcard include/config/uml.h) \
+    $(wildcard include/config/intelli/plug.h) \
     $(wildcard include/config/sched/debug.h) \
     $(wildcard include/config/sched/hrtick.h) \
     $(wildcard include/config/smp.h) \
@@ -1018,6 +1018,9 @@ deps_kernel/sched/core.o := \
     $(wildcard include/config/cpu/freq/default/gov/pegasus.h) \
     $(wildcard include/config/cpu/freq/default/gov/thunder.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactivex.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intelliact.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intellidem.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intellimm.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactive.h) \
   /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/switch_to.h \
   /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/tlb.h \

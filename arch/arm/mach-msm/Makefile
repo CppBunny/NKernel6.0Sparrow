@@ -61,7 +61,6 @@ obj-$(CONFIG_ARCH_MSM8226) += gpiomux-v2.o gpiomux.o
 obj-$(CONFIG_ARCH_MSM8610) += gpiomux-v2.o gpiomux.o
 obj-$(CONFIG_ARCH_APQ8084) += gpiomux-v2.o gpiomux.o
 obj-$(CONFIG_ARCH_FSM9900) += gpiomux-v2.o gpiomux.o
-
 obj-$(CONFIG_MSM_CACHE_ERP) += cache_erp.o
 
 obj-$(CONFIG_MSM_HSIC_SYSMON) += hsic_sysmon.o
@@ -74,6 +73,7 @@ obj-$(CONFIG_MEMORY_HOLE_CARVEOUT) +=  msm_mem_hole.o
 obj-$(CONFIG_MSM_SMCMOD) += smcmod.o
 
 obj-$(CONFIG_ARCH_MSM8974) += msm_mpmctr.o
-
 obj-$(CONFIG_ARCH_RANDOM) += early_random.o
 obj-$(CONFIG_PERFMAP) += perfmap.o
+
+obj-$(CONFIG_INTELLI_PLUG) += intelli_plug.o

@@ -581,6 +581,7 @@ deps_kernel/sched/debug.o := \
     $(wildcard include/config/paravirt.h) \
     $(wildcard include/config/paravirt/time/accounting.h) \
     $(wildcard include/config/sched/hrtick.h) \
+    $(wildcard include/config/intelli/plug.h) \
   include/linux/sched/sysctl.h \
   include/linux/sched/rt.h \
   include/linux/stop_machine.h \

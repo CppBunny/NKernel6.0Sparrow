@@ -800,6 +800,11 @@ config MSM_GSBI9_UART
 	default n
 	help
 	  This enables GSBI9 configured into UART.
+config INTELLI_PLUG
+	bool "Enable intelli-plug cpu hotplug driver"
+	default n
+	help
+	  Generic Intelli-plug cpu hotplug driver for ARM SOCs
 
 config MSM_ULTRASOUND
 	bool "QDSP6V2 HW Ultrasound support"
@@ -847,6 +852,9 @@ config MSM_L1_ERR_PANIC
 	  instability is suspected.
 
 	  For production builds, you should probably say 'N' here.
+
+
+
 
 config MSM_L1_RECOV_ERR_PANIC
 	bool "Panic on recoverable L1 cache errors"
@@ -978,6 +986,8 @@ config KRAIT_REGULATOR
 	 line from the PMIC. This supply line is powered by multiple
 	 regulators running in ganged mode inside the PMIC. Enable
 	 this option to support such configurations.
+
+
 
 config MSM_PP2S_FEMTO
 	bool "FSM99XX PP2S Interrupt Notification"

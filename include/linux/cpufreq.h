@@ -428,6 +428,15 @@ extern struct cpufreq_governor cpufreq_gov_thunder;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTERACTIVEX)
 extern struct cpufreq_governor cpufreq_gov_interactivex;
 #define CPUFREQ_DEFAULT_GOVERNOR 	(&cpufreq_gov_interactivex)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTELLIACT)
+extern struct cpufreq_governor cpufreq_gov_intelliact;
+#define CPUFREQ_DEFAULT_INTELLIACT	(&cpufreq_gov_intelliact)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTELLIDEM)
+extern struct cpufreq_governor cpufreq_gov_intellidem;
+#define CPUFREQ_DEFAULT_INTELLIDEM	(&cpufreq_gov_intellidem)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTELLIMM)
+extern struct cpufreq_governor cpufreq_gov_intellimm;
+#define CPUFREQ_DEFAULT_INTELLIMM	(&cpufreq_gov_intellimm)
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTERACTIVE)
 extern struct cpufreq_governor cpufreq_gov_interactive;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_interactive)

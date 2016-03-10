@@ -81,6 +81,9 @@ kernel/drivers/cpufreq/cpufreq_smartmax.ko
 kernel/drivers/cpufreq/cpufreq_pegasusq.ko
 kernel/drivers/cpufreq/cpufreq_thunderx.ko
 kernel/drivers/cpufreq/cpufreq_interactiveX.ko
+kernel/drivers/cpufreq/cpufreq_intelliactive.ko
+kernel/drivers/cpufreq/cpufreq_intellidemand.ko
+kernel/drivers/cpufreq/cpufreq_interactive.ko
 kernel/drivers/cpufreq/cpufreq_persistent_stats.ko
 kernel/drivers/crypto/msm/qce50.ko
 kernel/drivers/devfreq/governor_simpleondemand.ko

@@ -708,6 +708,9 @@ deps_arch/arm/kernel/smp.o := \
     $(wildcard include/config/cpu/freq/default/gov/pegasus.h) \
     $(wildcard include/config/cpu/freq/default/gov/thunder.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactivex.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intelliact.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intellidem.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intellimm.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactive.h) \
   /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/cacheflush.h \
     $(wildcard include/config/smp/on/up.h) \

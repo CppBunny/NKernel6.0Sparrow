@@ -599,6 +599,9 @@ deps_drivers/thermal/msm_thermal.o := \
     $(wildcard include/config/cpu/freq/default/gov/pegasus.h) \
     $(wildcard include/config/cpu/freq/default/gov/thunder.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactivex.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intelliact.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intellidem.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intellimm.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactive.h) \
   include/linux/msm_thermal.h \
     $(wildcard include/config/thermal/monitor.h) \

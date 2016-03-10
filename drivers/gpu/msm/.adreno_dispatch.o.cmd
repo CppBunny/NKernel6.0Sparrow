@@ -728,6 +728,9 @@ deps_drivers/gpu/msm/adreno_dispatch.o := \
     $(wildcard include/config/cpu/freq/default/gov/pegasus.h) \
     $(wildcard include/config/cpu/freq/default/gov/thunder.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactivex.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intelliact.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intellidem.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intellimm.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactive.h) \
   include/linux/msm_adreno_devfreq.h \
   drivers/gpu/msm/kgsl_snapshot.h \

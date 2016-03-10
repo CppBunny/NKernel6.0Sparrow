@@ -131,6 +131,24 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVEX
 	help
 	  Use the interactivex governor as default.
 
+config CPU_FREQ_DEFAULT_GOV_INTELLIACTIVE
+	bool "intelliact"
+	select CPU_FREQ_GOV_INTELLIACT
+	help
+	  Use the intelliactive governor as default.
+
+config CPU_FREQ_DEFAULT_GOV_INTELLIDEM
+	bool "intellidem"
+	select CPU_FREQ_GOV_INTELLIDEM
+	help
+	  Use the intellidemand governor as default.
+
+config CPU_FREQ_DEFAULT_GOV_INTELLIMM
+	bool "intellimm"
+	select CPU_FREQ_GOV_INTELLIMM
+	help
+	  Use the intellimm governor as default.
+
 config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	bool "interactive"
 	select CPU_FREQ_GOV_INTERACTIVE
@@ -260,6 +278,24 @@ config CPU_FREQ_GOV_INTERACTIVEX
 	depends on CPU_FREQ
 	help
 	'interactivex' governor
+
+config CPU_FREQ_GOV_INTELLIACT
+	tristate "'intelliact' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	'intelliact' governor
+
+config CPU_FREQ_GOV_INTELLIDEM
+	tristate "'intellidem' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	'intellidem' governor
+
+config CPU_FREQ_GOV_INTELLIMM
+	tristate "'intellimm' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	'intellimm' governor
 
 config CPU_BOOST
 	tristate "Event base short term CPU freq boost"

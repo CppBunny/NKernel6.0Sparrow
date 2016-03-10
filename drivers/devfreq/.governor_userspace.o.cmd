@@ -440,6 +440,9 @@ deps_drivers/devfreq/governor_userspace.o := \
     $(wildcard include/config/cpu/freq/default/gov/pegasus.h) \
     $(wildcard include/config/cpu/freq/default/gov/thunder.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactivex.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intelliact.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intellidem.h) \
+    $(wildcard include/config/cpu/freq/default/gov/intellimm.h) \
     $(wildcard include/config/cpu/freq/default/gov/interactive.h) \
   include/linux/module.h \
     $(wildcard include/config/module/sig.h) \

@@ -86,13 +86,11 @@
 #include "sched.h"
 #include "../workqueue_internal.h"
 #include "../smpboot.h"
-#ifndef CONFIG_UML
 //adbg++
 #include <linux/asus_global.h>
 extern struct _asus_global asus_global;
 extern struct completion fake_completion;
 //adbg--
-#endif
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/sched.h>
@@ -125,6 +123,12 @@ void start_bandwidth_timer(struct hrtimer *period_timer, ktime_t period)
 
 DEFINE_MUTEX(sched_domains_mutex);
 DEFINE_PER_CPU_SHARED_ALIGNED(struct rq, runqueues);
+
+
+#ifdef CONFIG_INTELLI_PLUG
+DEFINE_PER_CPU_SHARED_ALIGNED(struct nr_stats_s, runqueue_stats);
+#endif
+
 
 static void update_rq_clock_task(struct rq *rq, s64 delta);
 
@@ -3049,6 +3053,61 @@ unsigned long this_cpu_load(void)
  *  This covers the NO_HZ=n code, for extra head-aches, see the comment below.
  */
 
+
+#ifdef CONFIG_INTELLI_PLUG
+unsigned long avg_nr_running(void)
+{
+	unsigned long i, sum = 0;
+	unsigned int seqcnt, ave_nr_running;
+
+	for_each_online_cpu(i) {
+		struct nr_stats_s *stats = &per_cpu(runqueue_stats, i);
+		struct rq *q = cpu_rq(i);
+
+		/*
+		 * Update average to avoid reading stalled value if there were
+		 * no run-queue changes for a long time. On the other hand if
+		 * the changes are happening right now, just read current value
+		 * directly.
+		 */
+		seqcnt = read_seqcount_begin(&stats->ave_seqcnt);
+		ave_nr_running = do_avg_nr_running(q);
+		if (read_seqcount_retry(&stats->ave_seqcnt, seqcnt)) {
+			read_seqcount_begin(&stats->ave_seqcnt);
+			ave_nr_running = stats->ave_nr_running;
+		}
+
+		sum += ave_nr_running;
+	}
+
+	return sum;
+}
+EXPORT_SYMBOL(avg_nr_running);
+unsigned long avg_cpu_nr_running(unsigned int cpu)
+{
+	unsigned int seqcnt, ave_nr_running;
+
+	struct nr_stats_s *stats = &per_cpu(runqueue_stats, cpu);
+	struct rq *q = cpu_rq(cpu);
+
+	/*
+	 * Update average to avoid reading stalled value if there were
+	 * no run-queue changes for a long time. On the other hand if
+	 * the changes are happening right now, just read current value
+	 * directly.
+	 */
+	seqcnt = read_seqcount_begin(&stats->ave_seqcnt);
+	ave_nr_running = do_avg_nr_running(q);
+	if (read_seqcount_retry(&stats->ave_seqcnt, seqcnt)) {
+		read_seqcount_begin(&stats->ave_seqcnt);
+		ave_nr_running = stats->ave_nr_running;
+	}
+
+	return ave_nr_running;
+}
+EXPORT_SYMBOL(avg_cpu_nr_running);
+#endif
+
 /* Variables and functions for calc_load */
 static atomic_long_t calc_load_tasks;
 static unsigned long calc_load_update;
@@ -3949,7 +4008,6 @@ need_resched:
 		rq->nr_switches++;
 		rq->curr = next;
 		++*switch_count;
-#ifndef CONFIG_UML
         //adbg++
         /* Save CPU prev/next task pointers into asus global */
         switch (cpu) {
@@ -3975,7 +4033,6 @@ need_resched:
             break;
         }
         //adbg--
-#endif
 		context_switch(rq, prev, next); /* unlocks the rq */
 		/*
 		 * The context switch have flipped the stack from under us
@@ -4271,9 +4328,7 @@ do_wait_for_common(struct completion *x,
 
 		__add_wait_queue_tail_exclusive(&x->wait, &wait);
 		do {
-#ifndef CONFIG_UML
-			task_thread_info(current)->pWaitingCompletion = x;  //adbg++
-#endif
+            task_thread_info(current)->pWaitingCompletion = x;  //adbg++
 			if (signal_pending_state(state, current)) {
 				timeout = -ERESTARTSYS;
 				break;
@@ -4283,9 +4338,7 @@ do_wait_for_common(struct completion *x,
 			timeout = action(timeout);
 			spin_lock_irq(&x->wait.lock);
 		} while (!x->done && timeout);
-#ifndef CONFIG_UML
-		task_thread_info(current)->pWaitingCompletion = &fake_completion;  //adbg++
-#endif
+        task_thread_info(current)->pWaitingCompletion = &fake_completion;  //adbg++
 		__remove_wait_queue(&x->wait, &wait);
 		if (!x->done)
 			return timeout;

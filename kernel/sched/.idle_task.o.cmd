@@ -21,6 +21,7 @@ deps_kernel/sched/idle_task.o := \
     $(wildcard include/config/paravirt/time/accounting.h) \
     $(wildcard include/config/sched/hrtick.h) \
     $(wildcard include/config/schedstats.h) \
+    $(wildcard include/config/intelli/plug.h) \
     $(wildcard include/config/numa/balancing.h) \
     $(wildcard include/config/debug/spinlock.h) \
     $(wildcard include/config/sysrq/sched/debug.h) \
