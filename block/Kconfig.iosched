@@ -23,6 +23,12 @@ config IOSCHED_TRIPNDROID
 	---help---
 	The tripndroid I/O scheduler
 
+config IOSCHED_FIOPS
+	tristate "Fiops I/O scheduler"
+	default y
+	---help---
+	The Fiops I/O scheduler
+
 config IOSCHED_TEST
 	tristate "Test I/O scheduler"
 	depends on DEBUG_FS

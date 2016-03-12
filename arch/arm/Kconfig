@@ -2159,6 +2159,7 @@ config ATAGS_PROC
 	  Should the atags used to boot the kernel be exported in an "atags"
 	  file in procfs. Useful with kexec.
 
+
 config CRASH_DUMP
 	bool "Build kdump crash kernel (EXPERIMENTAL)"
 	help
