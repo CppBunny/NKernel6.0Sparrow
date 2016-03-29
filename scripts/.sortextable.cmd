@@ -13,7 +13,7 @@ deps_scripts/sortextable := \
   /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/time.h \
-  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -32,7 +32,7 @@ deps_scripts/sortextable := \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/getopt.h \
   /usr/include/elf.h \
-  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/auxv.h \
@@ -47,7 +47,7 @@ deps_scripts/sortextable := \
   /usr/include/libio.h \
   /usr/include/_G_config.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
   /usr/include/x86_64-linux-gnu/bits/stdio.h \

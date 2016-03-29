@@ -14,7 +14,7 @@ deps_scripts/kconfig/lxdialog/checklist.o := \
   /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/time.h \
-  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -50,17 +50,20 @@ deps_scripts/kconfig/lxdialog/checklist.o := \
   /usr/include/x86_64-linux-gnu/bits/string.h \
   /usr/include/x86_64-linux-gnu/bits/string2.h \
   /usr/include/x86_64-linux-gnu/bits/string3.h \
-  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h \
   /usr/include/libintl.h \
   /usr/include/locale.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/curses.h \
   /usr/include/ncurses_dll.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/stdio.h \
   /usr/include/libio.h \
   /usr/include/_G_config.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
   /usr/include/x86_64-linux-gnu/bits/stdio.h \
