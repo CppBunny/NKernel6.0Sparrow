@@ -1,11 +1,11 @@
-cmd_arch/arm/boot/compressed/hyp-stub.o := /home/noahvt/Documents/NKernel6.0/scripts/gcc-wrapper.py /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-gcc -Wp,-MD,arch/arm/boot/compressed/.hyp-stub.o.d  -nostdinc -isystem /usr/local/share/arm-eabi-4.9/bin/../lib/gcc/arm-linux-gnueabi/4.9.1/include -I/home/noahvt/Documents/NKernel6.0/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/noahvt/Documents/NKernel6.0/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/noahvt/Documents/NKernel6.0/include/uapi -Iinclude/generated/uapi -include /home/noahvt/Documents/NKernel6.0/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -DASUS_SW_VER=\"WI501Q_ENG\" -DASUS_DEBUG=2 -DASUS_WI501Q_PROJECT=1  -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2     -DZIMAGE     -c -o arch/arm/boot/compressed/hyp-stub.o arch/arm/boot/compressed/hyp-stub.S
+cmd_arch/arm/boot/compressed/hyp-stub.o := /home/noahvt/Documents/BuildServer/Source/Sparrow/scripts/gcc-wrapper.py /usr/local/share/arm-eabi-4.9/bin/arm-linux-gnueabi-gcc -Wp,-MD,arch/arm/boot/compressed/.hyp-stub.o.d  -nostdinc -isystem /usr/local/share/arm-eabi-4.9/bin/../lib/gcc/arm-linux-gnueabi/4.9.1/include -I/home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/noahvt/Documents/BuildServer/Source/Sparrow/include/uapi -Iinclude/generated/uapi -include /home/noahvt/Documents/BuildServer/Source/Sparrow/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -DASUS_SW_VER=\"WI501Q_ENG\" -DASUS_DEBUG=2 -DASUS_WI501Q_PROJECT=1  -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2     -DZIMAGE     -c -o arch/arm/boot/compressed/hyp-stub.o arch/arm/boot/compressed/hyp-stub.S
 
 source_arch/arm/boot/compressed/hyp-stub.o := arch/arm/boot/compressed/hyp-stub.S
 
 deps_arch/arm/boot/compressed/hyp-stub.o := \
     $(wildcard include/config/cpu/big/endian.h) \
     $(wildcard include/config/arm/arch/timer.h) \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/unified.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
     $(wildcard include/config/thumb2/kernel.h) \
   include/linux/init.h \
@@ -26,7 +26,7 @@ deps_arch/arm/boot/compressed/hyp-stub.o := \
     $(wildcard include/config/64bit.h) \
   include/uapi/linux/types.h \
   arch/arm/include/generated/asm/types.h \
-  /home/noahvt/Documents/NKernel6.0/include/uapi/asm-generic/types.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/include/uapi/asm-generic/types.h \
   include/asm-generic/int-ll64.h \
   include/uapi/asm-generic/int-ll64.h \
   arch/arm/include/generated/asm/bitsperlong.h \
@@ -38,25 +38,25 @@ deps_arch/arm/boot/compressed/hyp-stub.o := \
     $(wildcard include/config/have/underscore/symbol/prefix.h) \
     $(wildcard include/config/modversions.h) \
     $(wildcard include/config/unused/symbols.h) \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/linkage.h \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/assembler.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/asm/linkage.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/asm/assembler.h \
     $(wildcard include/config/cpu/feroceon.h) \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/smp.h) \
     $(wildcard include/config/cpu/use/domains.h) \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/ptrace.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/arm/thumb.h) \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/uapi/asm/ptrace.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/uapi/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/hwcap.h \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/uapi/asm/hwcap.h \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/domain.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/asm/hwcap.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/uapi/asm/hwcap.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/asm/domain.h \
     $(wildcard include/config/verify/permission/fault.h) \
     $(wildcard include/config/io/36.h) \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/opcodes-virt.h \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/opcodes.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/asm/opcodes-virt.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/asm/opcodes.h \
     $(wildcard include/config/cpu/endian/be32.h) \
-  /home/noahvt/Documents/NKernel6.0/arch/arm/include/asm/virt.h \
+  /home/noahvt/Documents/BuildServer/Source/Sparrow/arch/arm/include/asm/virt.h \
     $(wildcard include/config/arm/virt/ext.h) \
 
 arch/arm/boot/compressed/hyp-stub.o: $(deps_arch/arm/boot/compressed/hyp-stub.o)
